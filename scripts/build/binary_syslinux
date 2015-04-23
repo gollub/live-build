@@ -133,9 +133,9 @@ case "${LB_BUILD_WITH_CHROOT}" in
 		;;
 
 	false)
-		if [ ! -e "/usr/share/$(echo ${_BOOTLOADER} | tr [a-z] [A-Z])" ]
+		if [ ! -e "/usr/lib/$(echo ${_BOOTLOADER} | tr [a-z] [A-Z])" ]
 		then
-			Echo_error "/usr/share/$(echo ${_BOOTLOADER} | tr [a-z] [A-Z])"
+			Echo_error "/usr/lib/$(echo ${_BOOTLOADER} | tr [a-z] [A-Z])"
 			exit 1
 		fi
 
